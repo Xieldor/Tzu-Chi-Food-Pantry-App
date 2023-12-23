@@ -1,0 +1,4 @@
+#Sat Dec 23 10:28:39 EST 2023
+base.0=/Users/tianfangxie/App/ciji/app/build/intermediates/dex/release/mergeDexRelease/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

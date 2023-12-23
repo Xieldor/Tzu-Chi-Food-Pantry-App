@@ -1,0 +1,189 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:2:1-43:12
+INJECTED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:2:1-43:12
+INJECTED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:2:1-43:12
+INJECTED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:2:1-43:12
+MERGED from [com.android.support:design:27.1.1] /Users/tianfangxie/.gradle/caches/transforms-3/3ca2e3884bcf5539852344010b5b0c54/transformed/design-27.1.1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-vision:9.4.0] /Users/tianfangxie/.gradle/caches/transforms-3/93b84cf9e8c626e5ea6d06b0696872ba/transformed/play-services-vision-9.4.0/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-base:9.4.0] /Users/tianfangxie/.gradle/caches/transforms-3/edb0b8cb4a539ff56e84a05e701a680a/transformed/play-services-base-9.4.0/AndroidManifest.xml:16:1-24:12
+MERGED from [com.google.android.gms:play-services-tasks:9.4.0] /Users/tianfangxie/.gradle/caches/transforms-3/34bf74068f65b66933475509ab4d9dae/transformed/play-services-tasks-9.4.0/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/tianfangxie/.gradle/caches/transforms-3/b57ee57aaa77a5b00638dc522f568c78/transformed/play-services-basement-9.4.0/AndroidManifest.xml:16:1-26:12
+MERGED from [com.android.support:support-v4:27.1.1] /Users/tianfangxie/.gradle/caches/transforms-3/e6f8234437192954067ae385d040acd8/transformed/support-v4-27.1.1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/tianfangxie/.gradle/caches/transforms-3/4e1ed47ffe673a53a722506197ca6bf9/transformed/support-media-compat-27.1.1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/tianfangxie/.gradle/caches/transforms-3/d2000a0d31d265bcb74009859be93ba8/transformed/appcompat-v7-27.1.1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/tianfangxie/.gradle/caches/transforms-3/141266393dfc3801648aec4e9fa33611/transformed/support-fragment-27.1.1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/tianfangxie/.gradle/caches/transforms-3/53b024d34c9bcfc04cf6e99c45ace530/transformed/recyclerview-v7-27.1.1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/tianfangxie/.gradle/caches/transforms-3/29614e06cc3b4bcc4dc5404c18ad5474/transformed/animated-vector-drawable-27.1.1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/tianfangxie/.gradle/caches/transforms-3/9ed20b37ef5bc37950a7d6a45c58f63a/transformed/support-core-ui-27.1.1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/tianfangxie/.gradle/caches/transforms-3/ae06992ae326ae58c4f258d543214f49/transformed/support-core-utils-27.1.1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.1] /Users/tianfangxie/.gradle/caches/transforms-3/c90f81f92a94d522c2a730f78267f4d0/transformed/transition-27.1.1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/tianfangxie/.gradle/caches/transforms-3/155142c3d017142bb8564e314aba49bb/transformed/support-vector-drawable-27.1.1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] /Users/tianfangxie/.gradle/caches/transforms-3/090b0f84ac870b73b2c9ce488a5950e0/transformed/support-compat-27.1.1/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/tianfangxie/.gradle/caches/transforms-3/c7bfb0229cf6213a4854d425cbfb1097/transformed/runtime-1.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/tianfangxie/.gradle/caches/transforms-3/f71140883b1241810e15aae17310d520/transformed/livedata-core-1.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/tianfangxie/.gradle/caches/transforms-3/ff4815841917a73457f91c58ea3c0ead/transformed/viewmodel-1.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] /Users/tianfangxie/.gradle/caches/transforms-3/ae80c259f2b5868db056453509e77c2c/transformed/runtime-1.1.0/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:2:1-43:12
+INJECTED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:2:1-43:12
+INJECTED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:2:1-43:12
+	package
+		ADDED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:3:5-66
+		INJECTED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml
+		ADDED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:2:1-43:12
+		INJECTED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml
+		ADDED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:2:1-43:12
+		INJECTED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:2:11-69
+	android:installLocation
+		ADDED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:4:5-35
+uses-feature#android.hardware.camera
+ADDED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:6:5-60
+	android:name
+		ADDED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:6:19-57
+uses-permission#android.permission.CAMERA
+ADDED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:8:5-65
+	android:name
+		ADDED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:8:22-62
+application
+ADDED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:10:5-41:19
+MERGED from [com.google.android.gms:play-services-vision:9.4.0] /Users/tianfangxie/.gradle/caches/transforms-3/93b84cf9e8c626e5ea6d06b0696872ba/transformed/play-services-vision-9.4.0/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-vision:9.4.0] /Users/tianfangxie/.gradle/caches/transforms-3/93b84cf9e8c626e5ea6d06b0696872ba/transformed/play-services-vision-9.4.0/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-base:9.4.0] /Users/tianfangxie/.gradle/caches/transforms-3/edb0b8cb4a539ff56e84a05e701a680a/transformed/play-services-base-9.4.0/AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-base:9.4.0] /Users/tianfangxie/.gradle/caches/transforms-3/edb0b8cb4a539ff56e84a05e701a680a/transformed/play-services-base-9.4.0/AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-tasks:9.4.0] /Users/tianfangxie/.gradle/caches/transforms-3/34bf74068f65b66933475509ab4d9dae/transformed/play-services-tasks-9.4.0/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks:9.4.0] /Users/tianfangxie/.gradle/caches/transforms-3/34bf74068f65b66933475509ab4d9dae/transformed/play-services-tasks-9.4.0/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/tianfangxie/.gradle/caches/transforms-3/b57ee57aaa77a5b00638dc522f568c78/transformed/play-services-basement-9.4.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/tianfangxie/.gradle/caches/transforms-3/b57ee57aaa77a5b00638dc522f568c78/transformed/play-services-basement-9.4.0/AndroidManifest.xml:20:5-24:19
+	android:supportsRtl
+		ADDED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:16:9-37
+	android:label
+		ADDED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:15:9-44
+	android:hardwareAccelerated
+		ADDED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:13:9-43
+	android:fullBackupContent
+		ADDED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:12:9-42
+	android:icon
+		ADDED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:14:9-38
+	android:allowBackup
+		ADDED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:11:9-35
+	android:theme
+		ADDED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:17:9-47
+meta-data#com.google.android.gms.version
+ADDED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:18:9-20:69
+MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/tianfangxie/.gradle/caches/transforms-3/b57ee57aaa77a5b00638dc522f568c78/transformed/play-services-basement-9.4.0/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/tianfangxie/.gradle/caches/transforms-3/b57ee57aaa77a5b00638dc522f568c78/transformed/play-services-basement-9.4.0/AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:20:13-66
+	android:name
+		ADDED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:19:13-58
+meta-data#com.google.android.gms.vision.DEPENDENCIES
+ADDED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:21:9-23:39
+	android:value
+		ADDED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:23:13-36
+	android:name
+		ADDED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:22:13-70
+activity#com.google.android.gms.samples.vision.barcodereader.HomeActivity
+ADDED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:25:9-34:20
+	android:label
+		ADDED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:28:13-56
+	android:exported
+		ADDED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:27:13-36
+	android:name
+		ADDED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:26:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:29:13-33:29
+action#android.intent.action.MAIN
+ADDED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:30:17-69
+	android:name
+		ADDED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:30:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:32:17-77
+	android:name
+		ADDED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:32:27-74
+activity#com.google.android.gms.samples.vision.barcodereader.MainActivity
+ADDED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:36:9-50
+	android:name
+		ADDED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:36:19-47
+activity#com.google.android.gms.samples.vision.barcodereader.BarcodeCaptureActivity
+ADDED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:37:9-38:43
+	android:label
+		ADDED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:38:13-41
+	android:name
+		ADDED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:37:19-57
+activity#com.google.android.gms.samples.vision.barcodereader.ResultActivity
+ADDED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:39:9-52
+	android:name
+		ADDED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:39:19-49
+activity#com.google.android.gms.samples.vision.barcodereader.DatabaseContentActivity
+ADDED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:40:9-61
+	android:name
+		ADDED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:40:19-58
+uses-sdk
+INJECTED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml
+INJECTED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:design:27.1.1] /Users/tianfangxie/.gradle/caches/transforms-3/3ca2e3884bcf5539852344010b5b0c54/transformed/design-27.1.1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] /Users/tianfangxie/.gradle/caches/transforms-3/3ca2e3884bcf5539852344010b5b0c54/transformed/design-27.1.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-vision:9.4.0] /Users/tianfangxie/.gradle/caches/transforms-3/93b84cf9e8c626e5ea6d06b0696872ba/transformed/play-services-vision-9.4.0/AndroidManifest.xml:4:5-42
+MERGED from [com.google.android.gms:play-services-vision:9.4.0] /Users/tianfangxie/.gradle/caches/transforms-3/93b84cf9e8c626e5ea6d06b0696872ba/transformed/play-services-vision-9.4.0/AndroidManifest.xml:4:5-42
+MERGED from [com.google.android.gms:play-services-base:9.4.0] /Users/tianfangxie/.gradle/caches/transforms-3/edb0b8cb4a539ff56e84a05e701a680a/transformed/play-services-base-9.4.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:9.4.0] /Users/tianfangxie/.gradle/caches/transforms-3/edb0b8cb4a539ff56e84a05e701a680a/transformed/play-services-base-9.4.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-tasks:9.4.0] /Users/tianfangxie/.gradle/caches/transforms-3/34bf74068f65b66933475509ab4d9dae/transformed/play-services-tasks-9.4.0/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks:9.4.0] /Users/tianfangxie/.gradle/caches/transforms-3/34bf74068f65b66933475509ab4d9dae/transformed/play-services-tasks-9.4.0/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/tianfangxie/.gradle/caches/transforms-3/b57ee57aaa77a5b00638dc522f568c78/transformed/play-services-basement-9.4.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/tianfangxie/.gradle/caches/transforms-3/b57ee57aaa77a5b00638dc522f568c78/transformed/play-services-basement-9.4.0/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:27.1.1] /Users/tianfangxie/.gradle/caches/transforms-3/e6f8234437192954067ae385d040acd8/transformed/support-v4-27.1.1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] /Users/tianfangxie/.gradle/caches/transforms-3/e6f8234437192954067ae385d040acd8/transformed/support-v4-27.1.1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/tianfangxie/.gradle/caches/transforms-3/4e1ed47ffe673a53a722506197ca6bf9/transformed/support-media-compat-27.1.1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/tianfangxie/.gradle/caches/transforms-3/4e1ed47ffe673a53a722506197ca6bf9/transformed/support-media-compat-27.1.1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/tianfangxie/.gradle/caches/transforms-3/d2000a0d31d265bcb74009859be93ba8/transformed/appcompat-v7-27.1.1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/tianfangxie/.gradle/caches/transforms-3/d2000a0d31d265bcb74009859be93ba8/transformed/appcompat-v7-27.1.1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/tianfangxie/.gradle/caches/transforms-3/141266393dfc3801648aec4e9fa33611/transformed/support-fragment-27.1.1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/tianfangxie/.gradle/caches/transforms-3/141266393dfc3801648aec4e9fa33611/transformed/support-fragment-27.1.1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/tianfangxie/.gradle/caches/transforms-3/53b024d34c9bcfc04cf6e99c45ace530/transformed/recyclerview-v7-27.1.1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/tianfangxie/.gradle/caches/transforms-3/53b024d34c9bcfc04cf6e99c45ace530/transformed/recyclerview-v7-27.1.1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/tianfangxie/.gradle/caches/transforms-3/29614e06cc3b4bcc4dc5404c18ad5474/transformed/animated-vector-drawable-27.1.1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/tianfangxie/.gradle/caches/transforms-3/29614e06cc3b4bcc4dc5404c18ad5474/transformed/animated-vector-drawable-27.1.1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/tianfangxie/.gradle/caches/transforms-3/9ed20b37ef5bc37950a7d6a45c58f63a/transformed/support-core-ui-27.1.1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/tianfangxie/.gradle/caches/transforms-3/9ed20b37ef5bc37950a7d6a45c58f63a/transformed/support-core-ui-27.1.1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/tianfangxie/.gradle/caches/transforms-3/ae06992ae326ae58c4f258d543214f49/transformed/support-core-utils-27.1.1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/tianfangxie/.gradle/caches/transforms-3/ae06992ae326ae58c4f258d543214f49/transformed/support-core-utils-27.1.1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] /Users/tianfangxie/.gradle/caches/transforms-3/c90f81f92a94d522c2a730f78267f4d0/transformed/transition-27.1.1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] /Users/tianfangxie/.gradle/caches/transforms-3/c90f81f92a94d522c2a730f78267f4d0/transformed/transition-27.1.1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/tianfangxie/.gradle/caches/transforms-3/155142c3d017142bb8564e314aba49bb/transformed/support-vector-drawable-27.1.1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/tianfangxie/.gradle/caches/transforms-3/155142c3d017142bb8564e314aba49bb/transformed/support-vector-drawable-27.1.1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/tianfangxie/.gradle/caches/transforms-3/090b0f84ac870b73b2c9ce488a5950e0/transformed/support-compat-27.1.1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/tianfangxie/.gradle/caches/transforms-3/090b0f84ac870b73b2c9ce488a5950e0/transformed/support-compat-27.1.1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/tianfangxie/.gradle/caches/transforms-3/c7bfb0229cf6213a4854d425cbfb1097/transformed/runtime-1.1.0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/tianfangxie/.gradle/caches/transforms-3/c7bfb0229cf6213a4854d425cbfb1097/transformed/runtime-1.1.0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/tianfangxie/.gradle/caches/transforms-3/f71140883b1241810e15aae17310d520/transformed/livedata-core-1.1.0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/tianfangxie/.gradle/caches/transforms-3/f71140883b1241810e15aae17310d520/transformed/livedata-core-1.1.0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/tianfangxie/.gradle/caches/transforms-3/ff4815841917a73457f91c58ea3c0ead/transformed/viewmodel-1.1.0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/tianfangxie/.gradle/caches/transforms-3/ff4815841917a73457f91c58ea3c0ead/transformed/viewmodel-1.1.0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/tianfangxie/.gradle/caches/transforms-3/ae80c259f2b5868db056453509e77c2c/transformed/runtime-1.1.0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/tianfangxie/.gradle/caches/transforms-3/ae80c259f2b5868db056453509e77c2c/transformed/runtime-1.1.0/AndroidManifest.xml:20:5-44
+INJECTED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml
+INJECTED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml
+		ADDED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml
+		ADDED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:9.4.0] /Users/tianfangxie/.gradle/caches/transforms-3/edb0b8cb4a539ff56e84a05e701a680a/transformed/play-services-base-9.4.0/AndroidManifest.xml:20:9-22:45
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:9.4.0] /Users/tianfangxie/.gradle/caches/transforms-3/edb0b8cb4a539ff56e84a05e701a680a/transformed/play-services-base-9.4.0/AndroidManifest.xml:22:19-43
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:9.4.0] /Users/tianfangxie/.gradle/caches/transforms-3/edb0b8cb4a539ff56e84a05e701a680a/transformed/play-services-base-9.4.0/AndroidManifest.xml:21:19-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:9.4.0] /Users/tianfangxie/.gradle/caches/transforms-3/edb0b8cb4a539ff56e84a05e701a680a/transformed/play-services-base-9.4.0/AndroidManifest.xml:20:19-85
