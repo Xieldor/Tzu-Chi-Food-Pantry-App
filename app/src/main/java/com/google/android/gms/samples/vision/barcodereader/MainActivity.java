@@ -33,6 +33,7 @@ import com.google.android.gms.vision.barcode.Barcode;
  */
 public class MainActivity extends Activity implements View.OnClickListener {
 
+    public static int conn_on;
     // use a compound button so either checkbox or switch widgets work.
     private CompoundButton autoFocus;
     private CompoundButton useFlash;

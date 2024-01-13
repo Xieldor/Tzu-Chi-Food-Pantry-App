@@ -1,44 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.google.android.gms.samples.vision.barcodereader.app-mergeDebugResources-12:/values-zh-rHK/values-zh-rHK.xml",
+            "outputFile": "com.google.android.gms.samples.vision.barcodereader.app-mergeDebugResources-11:/values-zh-rHK/values-zh-rHK.xml",
             "map": [
                 {
-                    "source": "/Users/tianfangxie/.gradle/caches/transforms-3/edb0b8cb4a539ff56e84a05e701a680a/transformed/play-services-base-9.4.0/res/values-zh-rHK/values.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "333,436,596,713,832,1004,1179,1297,1419,1604,1722,1825,1985,2102,2268,2389,2527,2612,2699",
-                        "endColumns": "102,159,116,118,171,174,117,121,184,117,102,159,116,165,120,137,84,86,100",
-                        "endOffsets": "431,591,708,827,999,1174,1292,1414,1599,1717,1820,1980,2097,2263,2384,2522,2607,2694,2795"
-                    },
-                    "to": {
-                        "startLines": "19,20,21,22,23,24,25,26,28,29,30,31,32,33,34,35,36,37,38",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "1732,1835,1995,2112,2231,2403,2578,2696,2996,3181,3299,3402,3562,3679,3845,3966,4104,4189,4276",
-                        "endColumns": "102,159,116,118,171,174,117,121,184,117,102,159,116,165,120,137,84,86,100",
-                        "endOffsets": "1830,1990,2107,2226,2398,2573,2691,2813,3176,3294,3397,3557,3674,3840,3961,4099,4184,4271,4372"
-                    }
-                },
-                {
-                    "source": "/Users/tianfangxie/.gradle/caches/transforms-3/b57ee57aaa77a5b00638dc522f568c78/transformed/play-services-basement-9.4.0/res/values-zh-rHK/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "4",
-                        "startOffsets": "335",
-                        "endColumns": "177",
-                        "endOffsets": "508"
-                    },
-                    "to": {
-                        "startLines": "27",
-                        "startColumns": "4",
-                        "startOffsets": "2818",
-                        "endColumns": "177",
-                        "endOffsets": "2991"
-                    }
-                },
-                {
-                    "source": "/Users/tianfangxie/.gradle/caches/transforms-3/d2000a0d31d265bcb74009859be93ba8/transformed/appcompat-v7-27.1.1/res/values-zh-rHK/values-zh-rHK.xml",
+                    "source": "/Users/tianfangxie/.gradle/caches/transforms-3/239d1529e0f96ab41a78a4e3b5db274d/transformed/appcompat-v7-27.1.1/res/values-zh-rHK/values-zh-rHK.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -55,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/Users/tianfangxie/.gradle/caches/transforms-3/090b0f84ac870b73b2c9ce488a5950e0/transformed/support-compat-27.1.1/res/values-zh-rHK/values-zh-rHK.xml",
+                    "source": "/Users/tianfangxie/.gradle/caches/transforms-3/5d64992977218b387f3c327e0c68a55b/transformed/support-compat-27.1.1/res/values-zh-rHK/values-zh-rHK.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -69,6 +35,40 @@
                         "startOffsets": "4455",
                         "endColumns": "101",
                         "endOffsets": "4552"
+                    }
+                },
+                {
+                    "source": "/Users/tianfangxie/.gradle/caches/transforms-3/db6a30d9f39732c59eb28f90875aa17f/transformed/play-services-base-9.4.0/res/values-zh-rHK/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "333,436,596,713,832,1004,1179,1297,1419,1604,1722,1825,1985,2102,2268,2389,2527,2612,2699",
+                        "endColumns": "102,159,116,118,171,174,117,121,184,117,102,159,116,165,120,137,84,86,100",
+                        "endOffsets": "431,591,708,827,999,1174,1292,1414,1599,1717,1820,1980,2097,2263,2384,2522,2607,2694,2795"
+                    },
+                    "to": {
+                        "startLines": "19,20,21,22,23,24,25,26,28,29,30,31,32,33,34,35,36,37,38",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "1732,1835,1995,2112,2231,2403,2578,2696,2996,3181,3299,3402,3562,3679,3845,3966,4104,4189,4276",
+                        "endColumns": "102,159,116,118,171,174,117,121,184,117,102,159,116,165,120,137,84,86,100",
+                        "endOffsets": "1830,1990,2107,2226,2398,2573,2691,2813,3176,3294,3397,3557,3674,3840,3961,4099,4184,4271,4372"
+                    }
+                },
+                {
+                    "source": "/Users/tianfangxie/.gradle/caches/transforms-3/6b0cf64d9b0fd583a5d3c2ea7fd263b8/transformed/play-services-basement-9.4.0/res/values-zh-rHK/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "335",
+                        "endColumns": "177",
+                        "endOffsets": "508"
+                    },
+                    "to": {
+                        "startLines": "27",
+                        "startColumns": "4",
+                        "startOffsets": "2818",
+                        "endColumns": "177",
+                        "endOffsets": "2991"
                     }
                 }
             ]

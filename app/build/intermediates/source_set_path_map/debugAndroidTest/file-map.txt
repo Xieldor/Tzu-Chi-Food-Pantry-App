@@ -1,0 +1,4 @@
+com.google.android.gms.samples.vision.barcodereader.test.app-androidTest-0 /Users/tianfangxie/App/ciji/app/build/generated/res/resValues/androidTest/debug
+com.google.android.gms.samples.vision.barcodereader.test.app-mergeDebugAndroidTestResources-1 /Users/tianfangxie/App/ciji/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.google.android.gms.samples.vision.barcodereader.test.app-mergeDebugAndroidTestResources-2 /Users/tianfangxie/App/ciji/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.google.android.gms.samples.vision.barcodereader.test.app-merged_res-3 /Users/tianfangxie/App/ciji/app/build/intermediates/merged_res/debugAndroidTest

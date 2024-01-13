@@ -5,7 +5,11 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
+import android.text.Html;
+import android.view.Gravity;
 import android.view.LayoutInflater;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.view.View;
 import android.widget.EditText;
@@ -14,7 +18,7 @@ import android.widget.Toast;
 public class HomeActivity extends Activity {
 
     public static final String EXTRA_BUTTON_TYPE = "ButtonType";
-    private static final String USERNAME = "Xieldor";
+    private static final String USERNAME = "Haixin";
     private static final String PASSWORD = "Haixin";
 
     public static final String BUTTON_SCAN = "Register";
@@ -52,6 +56,32 @@ public class HomeActivity extends Activity {
                 startActivity(intent);
             }
         });
+
+        if (getIntent().getBooleanExtra("SHOW_ERROR_DIALOG", false)) {
+            showErrorDialog();
+        }
+    }
+
+    private void showErrorDialog() {
+        AlertDialog alertDialog = new AlertDialog.Builder(this)
+                .setTitle(Html.fromHtml("<font color='#FF0000'>连接失败</font>"))
+                .setMessage("数据库连接失败，请检查网络，稍后再试。")
+                .setIcon(android.R.drawable.ic_dialog_alert)
+                .setPositiveButton("确定", (dialog, which) -> {
+                    // 用户点击确定后只需关闭对话框
+                    dialog.dismiss();
+                })
+                .create();
+
+        Window window = alertDialog.getWindow();
+        if (window != null) {
+            WindowManager.LayoutParams layoutParams = new WindowManager.LayoutParams();
+            layoutParams.copyFrom(alertDialog.getWindow().getAttributes());
+            layoutParams.gravity = Gravity.CENTER_VERTICAL; // 或者其他位置
+            window.setAttributes(layoutParams);
+        }
+
+        alertDialog.show();
     }
 
 

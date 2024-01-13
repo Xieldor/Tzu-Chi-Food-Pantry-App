@@ -41,12 +41,21 @@
         android:textSize="18sp"
         android:layout_marginTop="10dp"/>
 
-    <!-- 上次取菜时间 -->
+    <!-- 住址城市 -->
     <TextView
         android:id="@+id/tvCity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="住址城市："
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"/>
+
+    <!-- 驾照过期时间 -->
+    <TextView
+        android:id="@+id/tvExp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="驾照有效期："
         android:textSize="18sp"
         android:layout_marginTop="10dp"/>
 

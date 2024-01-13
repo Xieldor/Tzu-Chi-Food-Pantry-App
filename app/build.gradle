@@ -6,7 +6,7 @@ android {
     defaultConfig {
         applicationId "com.google.android.gms.samples.vision.barcodereader"
         minSdkVersion 21
-        targetSdkVersion 31
+        targetSdkVersion 33
         versionCode 1
         versionName "1.0"
     }
@@ -16,11 +16,16 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    namespace 'com.google.android.gms.samples.vision.barcodereader'
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //noinspection GradleCompatible
     implementation 'com.android.support:support-v4:27.1.1'
+    //noinspection GradleDynamicVersion
     implementation 'com.google.android.gms:play-services-vision:9.4.0+'
+    //noinspection GradleCompatible
     implementation 'com.android.support:design:27.1.1'
+    implementation files('lib/mysql-connector-java-5.1.46-bin.jar')
 }
