@@ -1,10 +1,20 @@
 {
     "logs": [
         {
-            "outputFile": "com.google.android.gms.samples.vision.barcodereader.app-mergeDebugResources-12:/values-land/values-land.xml",
+            "outputFile": "com.google.android.gms.samples.vision.barcodereader.app-mergeDebugResources-11:/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "/Users/tianfangxie/.gradle/caches/transforms-3/3ca2e3884bcf5539852344010b5b0c54/transformed/design-27.1.1/res/values-land/values-land.xml",
+                    "source": "/Users/tianfangxie/.gradle/caches/transforms-3/239d1529e0f96ab41a78a4e3b5db274d/transformed/appcompat-v7-27.1.1/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,125,189,260",
+                        "endColumns": "69,63,70,67",
+                        "endOffsets": "120,184,255,323"
+                    }
+                },
+                {
+                    "source": "/Users/tianfangxie/.gradle/caches/transforms-3/b0c8c453fa242758d3ad641576d20ce8/transformed/design-27.1.1/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -20,16 +30,6 @@
                         "endLines": "9",
                         "endColumns": "12",
                         "endOffsets": "505"
-                    }
-                },
-                {
-                    "source": "/Users/tianfangxie/.gradle/caches/transforms-3/d2000a0d31d265bcb74009859be93ba8/transformed/appcompat-v7-27.1.1/res/values-land/values-land.xml",
-                    "from": {
-                        "startLines": "2,3,4,5",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,125,189,260",
-                        "endColumns": "69,63,70,67",
-                        "endOffsets": "120,184,255,323"
                     }
                 }
             ]

@@ -14,7 +14,7 @@ import android.widget.Toast;
 public class HomeActivity extends Activity {
 
     public static final String EXTRA_BUTTON_TYPE = "ButtonType";
-    private static final String USERNAME = "Xieldor";
+    private static final String USERNAME = "Haixin";
     private static final String PASSWORD = "Haixin";
 
     public static final String BUTTON_SCAN = "Register";

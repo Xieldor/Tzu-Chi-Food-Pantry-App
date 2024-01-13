@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.google.android.gms.samples.vision.barcodereader.app-mergeReleaseResources-12:/values-w820dp-v13/values-w820dp-v13.xml",
+            "outputFile": "com.google.android.gms.samples.vision.barcodereader.app-mergeReleaseResources-11:/values-w820dp-v13/values-w820dp-v13.xml",
             "map": [
                 {
                     "source": "/Users/tianfangxie/App/ciji/app/src/main/res/values-w820dp/dimens.xml",

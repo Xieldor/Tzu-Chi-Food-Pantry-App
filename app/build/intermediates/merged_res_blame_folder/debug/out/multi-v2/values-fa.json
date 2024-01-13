@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.google.android.gms.samples.vision.barcodereader.app-mergeDebugResources-12:/values-fa/values-fa.xml",
+            "outputFile": "com.google.android.gms.samples.vision.barcodereader.app-mergeDebugResources-11:/values-fa/values-fa.xml",
             "map": [
                 {
-                    "source": "/Users/tianfangxie/.gradle/caches/transforms-3/b57ee57aaa77a5b00638dc522f568c78/transformed/play-services-basement-9.4.0/res/values-fa/values.xml",
+                    "source": "/Users/tianfangxie/.gradle/caches/transforms-3/6b0cf64d9b0fd583a5d3c2ea7fd263b8/transformed/play-services-basement-9.4.0/res/values-fa/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/Users/tianfangxie/.gradle/caches/transforms-3/d2000a0d31d265bcb74009859be93ba8/transformed/appcompat-v7-27.1.1/res/values-fa/values-fa.xml",
+                    "source": "/Users/tianfangxie/.gradle/caches/transforms-3/239d1529e0f96ab41a78a4e3b5db274d/transformed/appcompat-v7-27.1.1/res/values-fa/values-fa.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -38,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "/Users/tianfangxie/.gradle/caches/transforms-3/edb0b8cb4a539ff56e84a05e701a680a/transformed/play-services-base-9.4.0/res/values-fa/values.xml",
+                    "source": "/Users/tianfangxie/.gradle/caches/transforms-3/db6a30d9f39732c59eb28f90875aa17f/transformed/play-services-base-9.4.0/res/values-fa/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -55,7 +55,7 @@
                     }
                 },
                 {
-                    "source": "/Users/tianfangxie/.gradle/caches/transforms-3/090b0f84ac870b73b2c9ce488a5950e0/transformed/support-compat-27.1.1/res/values-fa/values-fa.xml",
+                    "source": "/Users/tianfangxie/.gradle/caches/transforms-3/5d64992977218b387f3c327e0c68a55b/transformed/support-compat-27.1.1/res/values-fa/values-fa.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

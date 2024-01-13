@@ -1,29 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.google.android.gms.samples.vision.barcodereader.app-mergeDebugResources-12:/values-v26/values-v26.xml",
+            "outputFile": "com.google.android.gms.samples.vision.barcodereader.app-mergeDebugResources-11:/values-v26/values-v26.xml",
             "map": [
                 {
-                    "source": "/Users/tianfangxie/.gradle/caches/transforms-3/d2000a0d31d265bcb74009859be93ba8/transformed/appcompat-v7-27.1.1/res/values-v26/values-v26.xml",
-                    "from": {
-                        "startLines": "2,3,4,8,12,16",
-                        "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "55,130,217,431,657,896",
-                        "endLines": "2,3,7,11,15,16",
-                        "endColumns": "74,86,12,12,12,92",
-                        "endOffsets": "125,212,426,652,891,984"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,8,12,20",
-                        "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "55,130,217,381,557,1040",
-                        "endLines": "2,3,7,11,15,20",
-                        "endColumns": "74,86,12,12,12,92",
-                        "endOffsets": "125,212,376,552,791,1128"
-                    }
-                },
-                {
-                    "source": "/Users/tianfangxie/.gradle/caches/transforms-3/3ca2e3884bcf5539852344010b5b0c54/transformed/design-27.1.1/res/values-v26/values-v26.xml",
+                    "source": "/Users/tianfangxie/.gradle/caches/transforms-3/b0c8c453fa242758d3ad641576d20ce8/transformed/design-27.1.1/res/values-v26/values-v26.xml",
                     "from": {
                         "startLines": "2,6",
                         "startColumns": "4,4",
@@ -39,6 +20,25 @@
                         "endLines": "19,21",
                         "endColumns": "12,96",
                         "endOffsets": "1035,1225"
+                    }
+                },
+                {
+                    "source": "/Users/tianfangxie/.gradle/caches/transforms-3/239d1529e0f96ab41a78a4e3b5db274d/transformed/appcompat-v7-27.1.1/res/values-v26/values-v26.xml",
+                    "from": {
+                        "startLines": "2,3,4,8,12,16",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,130,217,431,657,896",
+                        "endLines": "2,3,7,11,15,16",
+                        "endColumns": "74,86,12,12,12,92",
+                        "endOffsets": "125,212,426,652,891,984"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,8,12,20",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,130,217,381,557,1040",
+                        "endLines": "2,3,7,11,15,20",
+                        "endColumns": "74,86,12,12,12,92",
+                        "endOffsets": "125,212,376,552,791,1128"
                     }
                 }
             ]

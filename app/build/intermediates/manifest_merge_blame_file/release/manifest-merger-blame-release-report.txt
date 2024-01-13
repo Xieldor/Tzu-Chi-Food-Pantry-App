@@ -7,89 +7,88 @@
 7
 8    <uses-sdk
 9        android:minSdkVersion="21"
-9-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml
-10        android:targetSdkVersion="31" />
-10-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml
+10        android:targetSdkVersion="33" />
 11
 12    <uses-feature android:name="android.hardware.camera" />
-12-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:6:5-60
-12-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:6:19-57
+12-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:5:5-60
+12-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:5:19-57
 13
 14    <uses-permission android:name="android.permission.CAMERA" />
-14-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:8:5-65
-14-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:8:22-62
+14-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:7:5-65
+14-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:7:22-62
 15
 16    <application
-16-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:10:5-41:19
+16-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:9:5-40:19
 17        android:allowBackup="true"
-17-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:11:9-35
-18        android:fullBackupContent="false"
-18-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:12:9-42
-19        android:hardwareAccelerated="true"
-19-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:13:9-43
-20        android:icon="@drawable/ciji"
-20-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:14:9-38
-21        android:label="Tzu Chi Food Pantry"
-21-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:15:9-44
-22        android:supportsRtl="true"
-22-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:16:9-37
-23        android:theme="@style/Theme.AppCompat" >
-23-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:17:9-47
-24        <meta-data
-24-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:18:9-20:69
-25            android:name="com.google.android.gms.version"
-25-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:19:13-58
-26            android:value="@integer/google_play_services_version" />
-26-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:20:13-66
-27        <meta-data
-27-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:21:9-23:39
-28            android:name="com.google.android.gms.vision.DEPENDENCIES"
-28-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:22:13-70
-29            android:value="barcode" />
-29-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:23:13-36
-30
-31        <activity
-31-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:25:9-34:20
-32            android:name="com.google.android.gms.samples.vision.barcodereader.HomeActivity"
-32-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:26:13-41
-33            android:exported="true"
-33-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:27:13-36
-34            android:label="@string/title_activity_main" >
-34-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:28:13-56
-35            <intent-filter>
-35-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:29:13-33:29
-36                <action android:name="android.intent.action.MAIN" />
-36-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:30:17-69
-36-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:30:25-66
-37
-38                <category android:name="android.intent.category.LAUNCHER" />
-38-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:32:17-77
-38-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:32:27-74
-39            </intent-filter>
-40        </activity>
-41        <activity android:name="com.google.android.gms.samples.vision.barcodereader.MainActivity" />
-41-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:36:9-50
-41-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:36:19-47
-42        <activity
-42-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:37:9-38:43
-43            android:name="com.google.android.gms.samples.vision.barcodereader.BarcodeCaptureActivity"
-43-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:37:19-57
-44            android:label="Read Barcode" />
-44-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:38:13-41
-45        <activity android:name="com.google.android.gms.samples.vision.barcodereader.ResultActivity" />
-45-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:39:9-52
-45-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:39:19-49
-46        <activity android:name="com.google.android.gms.samples.vision.barcodereader.DatabaseContentActivity" />
-46-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:40:9-61
-46-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:40:19-58
-47        <activity
-47-->[com.google.android.gms:play-services-base:9.4.0] /Users/tianfangxie/.gradle/caches/transforms-3/edb0b8cb4a539ff56e84a05e701a680a/transformed/play-services-base-9.4.0/AndroidManifest.xml:20:9-22:45
-48            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-48-->[com.google.android.gms:play-services-base:9.4.0] /Users/tianfangxie/.gradle/caches/transforms-3/edb0b8cb4a539ff56e84a05e701a680a/transformed/play-services-base-9.4.0/AndroidManifest.xml:20:19-85
-49            android:exported="false"
-49-->[com.google.android.gms:play-services-base:9.4.0] /Users/tianfangxie/.gradle/caches/transforms-3/edb0b8cb4a539ff56e84a05e701a680a/transformed/play-services-base-9.4.0/AndroidManifest.xml:22:19-43
-50            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-50-->[com.google.android.gms:play-services-base:9.4.0] /Users/tianfangxie/.gradle/caches/transforms-3/edb0b8cb4a539ff56e84a05e701a680a/transformed/play-services-base-9.4.0/AndroidManifest.xml:21:19-78
-51    </application>
-52
-53</manifest>
+17-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:10:9-35
+18        android:extractNativeLibs="true"
+19        android:fullBackupContent="false"
+19-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:11:9-42
+20        android:hardwareAccelerated="true"
+20-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:12:9-43
+21        android:icon="@drawable/ciji"
+21-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:13:9-38
+22        android:label="Tzu Chi Food Pantry"
+22-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:14:9-44
+23        android:supportsRtl="true"
+23-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:15:9-37
+24        android:theme="@style/Theme.AppCompat" >
+24-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:16:9-47
+25        <meta-data
+25-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:17:9-19:69
+26            android:name="com.google.android.gms.version"
+26-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:18:13-58
+27            android:value="@integer/google_play_services_version" />
+27-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:19:13-66
+28        <meta-data
+28-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:20:9-22:39
+29            android:name="com.google.android.gms.vision.DEPENDENCIES"
+29-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:21:13-70
+30            android:value="barcode" />
+30-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:22:13-36
+31
+32        <activity
+32-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:24:9-33:20
+33            android:name="com.google.android.gms.samples.vision.barcodereader.HomeActivity"
+33-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:25:13-41
+34            android:exported="true"
+34-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:26:13-36
+35            android:label="@string/title_activity_main" >
+35-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:27:13-56
+36            <intent-filter>
+36-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:28:13-32:29
+37                <action android:name="android.intent.action.MAIN" />
+37-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:29:17-69
+37-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:29:25-66
+38
+39                <category android:name="android.intent.category.LAUNCHER" />
+39-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:31:17-77
+39-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:31:27-74
+40            </intent-filter>
+41        </activity>
+42        <activity android:name="com.google.android.gms.samples.vision.barcodereader.MainActivity" />
+42-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:35:9-50
+42-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:35:19-47
+43        <activity
+43-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:36:9-37:43
+44            android:name="com.google.android.gms.samples.vision.barcodereader.BarcodeCaptureActivity"
+44-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:36:19-57
+45            android:label="Read Barcode" />
+45-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:37:13-41
+46        <activity android:name="com.google.android.gms.samples.vision.barcodereader.ResultActivity" />
+46-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:38:9-52
+46-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:38:19-49
+47        <activity android:name="com.google.android.gms.samples.vision.barcodereader.DatabaseContentActivity" />
+47-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:39:9-61
+47-->/Users/tianfangxie/App/ciji/app/src/main/AndroidManifest.xml:39:19-58
+48        <activity
+48-->[com.google.android.gms:play-services-base:9.4.0] /Users/tianfangxie/.gradle/caches/transforms-3/db6a30d9f39732c59eb28f90875aa17f/transformed/play-services-base-9.4.0/AndroidManifest.xml:20:9-22:45
+49            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+49-->[com.google.android.gms:play-services-base:9.4.0] /Users/tianfangxie/.gradle/caches/transforms-3/db6a30d9f39732c59eb28f90875aa17f/transformed/play-services-base-9.4.0/AndroidManifest.xml:20:19-85
+50            android:exported="false"
+50-->[com.google.android.gms:play-services-base:9.4.0] /Users/tianfangxie/.gradle/caches/transforms-3/db6a30d9f39732c59eb28f90875aa17f/transformed/play-services-base-9.4.0/AndroidManifest.xml:22:19-43
+51            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+51-->[com.google.android.gms:play-services-base:9.4.0] /Users/tianfangxie/.gradle/caches/transforms-3/db6a30d9f39732c59eb28f90875aa17f/transformed/play-services-base-9.4.0/AndroidManifest.xml:21:19-78
+52    </application>
+53
+54</manifest>

@@ -1,42 +1,46 @@
 [
     {
-        "merged": "com.google.android.gms.samples.vision.barcodereader.app-merged_res-14:/layout_activity_result.xml.flat",
-        "source": "com.google.android.gms.samples.vision.barcodereader.app-main-16:/layout/activity_result.xml"
+        "merged": "com.google.android.gms.samples.vision.barcodereader.app-merged_res-13:/layout-v17_activity_main.xml.flat",
+        "source": "com.google.android.gms.samples.vision.barcodereader.app-main-15:/layout-v17/activity_main.xml"
     },
     {
-        "merged": "com.google.android.gms.samples.vision.barcodereader.app-merged_res-14:/layout_barcode_capture.xml.flat",
-        "source": "com.google.android.gms.samples.vision.barcodereader.app-main-16:/layout/barcode_capture.xml"
+        "merged": "com.google.android.gms.samples.vision.barcodereader.app-merged_res-13:/drawable-hdpi_ciji.png.flat",
+        "source": "com.google.android.gms.samples.vision.barcodereader.app-main-15:/drawable-hdpi/ciji.png"
     },
     {
-        "merged": "com.google.android.gms.samples.vision.barcodereader.app-merged_res-14:/drawable-hdpi_icon.png.flat",
-        "source": "com.google.android.gms.samples.vision.barcodereader.app-main-16:/drawable-hdpi/icon.png"
+        "merged": "com.google.android.gms.samples.vision.barcodereader.app-merged_res-13:/layout_activity_result.xml.flat",
+        "source": "com.google.android.gms.samples.vision.barcodereader.app-main-15:/layout/activity_result.xml"
     },
     {
-        "merged": "com.google.android.gms.samples.vision.barcodereader.app-merged_res-14:/layout_activity_home.xml.flat",
-        "source": "com.google.android.gms.samples.vision.barcodereader.app-main-16:/layout/activity_home.xml"
+        "merged": "com.google.android.gms.samples.vision.barcodereader.app-merged_res-13:/layout_barcode_capture.xml.flat",
+        "source": "com.google.android.gms.samples.vision.barcodereader.app-main-15:/layout/barcode_capture.xml"
     },
     {
-        "merged": "com.google.android.gms.samples.vision.barcodereader.app-merged_res-14:/layout-land-v17_activity_main.xml.flat",
-        "source": "com.google.android.gms.samples.vision.barcodereader.app-main-16:/layout-land-v17/activity_main.xml"
+        "merged": "com.google.android.gms.samples.vision.barcodereader.app-merged_res-13:/layout_dialog_login.xml.flat",
+        "source": "com.google.android.gms.samples.vision.barcodereader.app-main-15:/layout/dialog_login.xml"
     },
     {
-        "merged": "com.google.android.gms.samples.vision.barcodereader.app-merged_res-14:/layout_dialog_login.xml.flat",
-        "source": "com.google.android.gms.samples.vision.barcodereader.app-main-16:/layout/dialog_login.xml"
+        "merged": "com.google.android.gms.samples.vision.barcodereader.app-merged_res-13:/drawable-hdpi_icon.png.flat",
+        "source": "com.google.android.gms.samples.vision.barcodereader.app-main-15:/drawable-hdpi/icon.png"
     },
     {
-        "merged": "com.google.android.gms.samples.vision.barcodereader.app-merged_res-14:/layout-v17_activity_main.xml.flat",
-        "source": "com.google.android.gms.samples.vision.barcodereader.app-main-16:/layout-v17/activity_main.xml"
+        "merged": "com.google.android.gms.samples.vision.barcodereader.app-merged_res-13:/layout_activity_database_content.xml.flat",
+        "source": "com.google.android.gms.samples.vision.barcodereader.app-main-15:/layout/activity_database_content.xml"
     },
     {
-        "merged": "com.google.android.gms.samples.vision.barcodereader.app-merged_res-14:/layout-land_barcode_capture.xml.flat",
-        "source": "com.google.android.gms.samples.vision.barcodereader.app-main-16:/layout-land/barcode_capture.xml"
+        "merged": "com.google.android.gms.samples.vision.barcodereader.app-merged_res-13:/layout-land-v17_activity_main.xml.flat",
+        "source": "com.google.android.gms.samples.vision.barcodereader.app-main-15:/layout-land-v17/activity_main.xml"
     },
     {
-        "merged": "com.google.android.gms.samples.vision.barcodereader.app-merged_res-14:/layout_activity_database_content.xml.flat",
-        "source": "com.google.android.gms.samples.vision.barcodereader.app-main-16:/layout/activity_database_content.xml"
+        "merged": "com.google.android.gms.samples.vision.barcodereader.app-merged_res-13:/drawable-hdpi_rounded_button.xml.flat",
+        "source": "com.google.android.gms.samples.vision.barcodereader.app-main-15:/drawable-hdpi/rounded_button.xml"
     },
     {
-        "merged": "com.google.android.gms.samples.vision.barcodereader.app-merged_res-14:/drawable-hdpi_ciji.png.flat",
-        "source": "com.google.android.gms.samples.vision.barcodereader.app-main-16:/drawable-hdpi/ciji.png"
+        "merged": "com.google.android.gms.samples.vision.barcodereader.app-merged_res-13:/layout-land_barcode_capture.xml.flat",
+        "source": "com.google.android.gms.samples.vision.barcodereader.app-main-15:/layout-land/barcode_capture.xml"
+    },
+    {
+        "merged": "com.google.android.gms.samples.vision.barcodereader.app-merged_res-13:/layout_activity_home.xml.flat",
+        "source": "com.google.android.gms.samples.vision.barcodereader.app-main-15:/layout/activity_home.xml"
     }
 ]

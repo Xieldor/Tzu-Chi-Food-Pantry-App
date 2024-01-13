@@ -23,6 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif-condensed-light"
         android:text="慈济取菜登记"
         android:textColor="#E91E63"
         android:textSize="34sp" />
@@ -31,18 +32,27 @@
         android:id="@+id/btnLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="登录" />
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_button"
+        android:text="登录"
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/btnScan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
         android:text="注册" />
 
     <Button
         android:id="@+id/btnFetchDish"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
         android:text="取菜" />
 
     <TextView
@@ -50,16 +60,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="版本号: 1.1.0"
+        android:text="版本号: 2.1.0"
         android:textColor="#9C27B0" />  <!-- 替换为您的版本号 -->
-    android:textColor="#FFFFFF" />
 
     <TextView
         android:id="@+id/txtAuthor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="作者: Tianfang Xie &amp; Guanhai Xin"
+        android:text="作者: T &amp; Haixin"
         android:textColor="#9C27B0" />  <!-- 替换为作者的名字 -->
-    android:textColor="#FFFFFF" />
 
 </LinearLayout>

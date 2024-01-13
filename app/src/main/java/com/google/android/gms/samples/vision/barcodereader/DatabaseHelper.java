@@ -9,8 +9,11 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import com.google.android.gms.vision.barcode.Barcode;
 
+import java.io.BufferedReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.util.ArrayList;
@@ -37,6 +40,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     private static final String KEY_LAST_TIME = "last_time";
 
+    private static final String KEY_APT_NUMBER = "apt_number";
+    private static final String KEY_POPULATION_OVER_65 = "population_over_65";
+    private static final String KEY_POPULATION_17_TO_64 = "population_17_to_64";
+    private static final String KEY_POPULATION_UNDER_17 = "population_under_17";
+    private static final String KEY_VETERAN = "veteran";
+
 
     private static final String CREATE_TABLE = "CREATE TABLE " + TABLE_NAME + "("
             + KEY_LICENSE_NUMBER + " TEXT PRIMARY KEY,"
@@ -45,10 +54,15 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             + KEY_LAST_NAME + " TEXT,"
             + KEY_GENDER + " TEXT,"
             + KEY_ADDRESS_STREET + " TEXT,"
+            + KEY_APT_NUMBER + " TEXT,"
             + KEY_ADDRESS_CITY + " TEXT,"
             + KEY_ADDRESS_STATE + " TEXT,"
             + KEY_ADDRESS_ZIP + " TEXT,"
             + KEY_BIRTH_DATE + " TEXT,"
+            + KEY_POPULATION_OVER_65 + " TEXT,"
+            + KEY_POPULATION_17_TO_64 + " TEXT,"
+            + KEY_POPULATION_UNDER_17 + " TEXT,"
+            + KEY_VETERAN + " TEXT," // 退役军人：有为1，否为0
             + KEY_PHONE_NUMBER + " TEXT,"
             + KEY_LAST_TIME + " TEXT"
             // 定义其他字段
@@ -92,7 +106,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return exists;
     }
 
-    public void addDriverLicenseWithPhoneNumber(Barcode.DriverLicense driverLicense, String phoneNumber) {
+    public void addDriverLicenseWithPhoneNumber(Barcode.DriverLicense driverLicense, String phoneNumber, String aptNumber, String over65, String age17To64, String under17, String isVeteran) {
         SQLiteDatabase db = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();
@@ -102,10 +116,15 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(KEY_LAST_NAME, driverLicense.lastName);
         values.put(KEY_GENDER, driverLicense.gender);
         values.put(KEY_ADDRESS_STREET, driverLicense.addressStreet);
+        values.put(KEY_APT_NUMBER, aptNumber);
         values.put(KEY_ADDRESS_CITY, driverLicense.addressCity);
         values.put(KEY_ADDRESS_STATE, driverLicense.addressState);
         values.put(KEY_ADDRESS_ZIP, driverLicense.addressZip);
         values.put(KEY_BIRTH_DATE, driverLicense.birthDate);
+        values.put(KEY_POPULATION_OVER_65, over65);
+        values.put(KEY_POPULATION_17_TO_64, age17To64);
+        values.put(KEY_POPULATION_UNDER_17, under17);
+        values.put(KEY_VETERAN, isVeteran); // 退役军人状态为字符串
         values.put(KEY_PHONE_NUMBER, phoneNumber);
         values.put(KEY_LAST_TIME, "00000000");
 
@@ -113,11 +132,15 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.close();
     }
 
-    public void updateDriverLicensePhoneNumber(Barcode.DriverLicense driverLicense, String newPhoneNumber) {
+    public void updateDriverLicensePhoneNumber(Barcode.DriverLicense driverLicense, String newPhoneNumber, String over65, String age17To64, String under17, String isVeteran) {
         SQLiteDatabase db = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();
         values.put(KEY_PHONE_NUMBER, newPhoneNumber);
+        values.put(KEY_POPULATION_OVER_65, over65);
+        values.put(KEY_POPULATION_17_TO_64, age17To64);
+        values.put(KEY_POPULATION_UNDER_17, under17);
+        values.put(KEY_VETERAN, isVeteran); // 退役军人状态为字符串
 
         db.update(TABLE_NAME, values, KEY_LICENSE_NUMBER + " = ?", new String[]{driverLicense.licenseNumber});
         db.close();
@@ -141,6 +164,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                         + "\nLast Name: " + cursor.getString(cursor.getColumnIndex(KEY_LAST_NAME))
                         + "\nGender: " + cursor.getString(cursor.getColumnIndex(KEY_GENDER))
                         + "\nStreet: " + cursor.getString(cursor.getColumnIndex(KEY_ADDRESS_STREET))
+                        + "\nApt: " + cursor.getString(cursor.getColumnIndex(KEY_APT_NUMBER))
                         + "\nCity: " + cursor.getString(cursor.getColumnIndex(KEY_ADDRESS_CITY))
                         + "\nState: " + cursor.getString(cursor.getColumnIndex(KEY_ADDRESS_STATE))
                         + "\nZip: " + cursor.getString(cursor.getColumnIndex(KEY_ADDRESS_ZIP))
@@ -207,6 +231,99 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         writer.flush();
         writer.close();
         cursor.close();
+        db.close();
+    }
+
+    public void insertOrUpdateFromCSV(InputStream inputStream) throws IOException {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        try {
+            String line = reader.readLine(); // Read and discard the header line
+            if (line == null) return;
+
+            db.beginTransaction();
+            while ((line = reader.readLine()) != null) {
+                String[] columns = line.split(","); // Assuming comma-separated values
+
+                if (columns.length >= 17) { // Replace with the number of columns in your CSV
+                    ContentValues values = new ContentValues();
+                    values.put(KEY_LICENSE_NUMBER, columns[0]);
+                    values.put(KEY_FIRST_NAME, columns[1]);
+                    values.put(KEY_MIDDLE_NAME, columns[2]);
+                    values.put(KEY_LAST_NAME, columns[3]);
+                    values.put(KEY_GENDER, columns[4]);
+                    values.put(KEY_ADDRESS_STREET, columns[5]);
+                    values.put(KEY_APT_NUMBER, columns[6]);
+                    values.put(KEY_ADDRESS_CITY, columns[7]);
+                    values.put(KEY_ADDRESS_STATE, columns[8]);
+                    values.put(KEY_ADDRESS_ZIP, columns[9]);
+                    values.put(KEY_BIRTH_DATE, columns[10]);
+                    values.put(KEY_POPULATION_OVER_65, columns[11]);
+                    values.put(KEY_POPULATION_17_TO_64, columns[12]);
+                    values.put(KEY_POPULATION_UNDER_17, columns[13]);
+                    values.put(KEY_VETERAN, columns[14]); // 退役军人状态为字符串
+                    values.put(KEY_PHONE_NUMBER, columns[15]);
+                    values.put(KEY_LAST_TIME, columns[16]);
+
+                    db.insertWithOnConflict(TABLE_NAME, null, values, SQLiteDatabase.CONFLICT_REPLACE);
+                }
+            }
+            db.setTransactionSuccessful();
+        } finally {
+            db.endTransaction();
+        }
+        db.close();
+        reader.close();
+    }
+
+    public List<String> checkAddressAndRetrieveNames(String addressStreet, String addressCity, String addressState, String addressZip, String aptNumber) {
+        SQLiteDatabase db = this.getReadableDatabase();
+        List<String> names = new ArrayList<>();
+
+        String query = "SELECT " + KEY_FIRST_NAME + ", " + KEY_LAST_NAME
+                + " FROM " + TABLE_NAME
+                + " WHERE " + KEY_ADDRESS_STREET + "=? AND "
+                + KEY_APT_NUMBER + "=? AND "
+                + KEY_ADDRESS_CITY + "=? AND "
+                + KEY_ADDRESS_STATE + "=? AND "
+                + KEY_ADDRESS_ZIP + "=?";
+        Cursor cursor = db.rawQuery(query, new String[]{addressStreet, aptNumber, addressCity, addressState, addressZip});
+
+        if (cursor.moveToFirst()) {
+            do {
+                @SuppressLint("Range") String name = cursor.getString(cursor.getColumnIndex(KEY_FIRST_NAME))
+                        + " " + cursor.getString(cursor.getColumnIndex(KEY_LAST_NAME));
+                names.add(name);
+            } while (cursor.moveToNext());
+        }
+
+        cursor.close();
+        db.close();
+        return names;
+    }
+
+    public void deleteRecordsByAddress(String addressStreet, String addressCity, String addressState, String addressZip, String aptNumber) {
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        String whereClause = KEY_ADDRESS_STREET + "=? AND "
+                + KEY_APT_NUMBER + "=? AND "
+                + KEY_ADDRESS_CITY + "=? AND "
+                + KEY_ADDRESS_STATE + "=? AND "
+                + KEY_ADDRESS_ZIP + "=?";
+        String[] whereArgs = new String[]{addressStreet, aptNumber, addressCity, addressState, addressZip};
+
+        db.delete(TABLE_NAME, whereClause, whereArgs);
+        db.close();
+    }
+
+    public void updateAptNumber(Barcode.DriverLicense driverLicense, String aptNumber) {
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        ContentValues values = new ContentValues();
+        values.put(KEY_APT_NUMBER, aptNumber);
+
+        db.update(TABLE_NAME, values, KEY_LICENSE_NUMBER + " = ?", new String[]{driverLicense.licenseNumber});
         db.close();
     }
 }

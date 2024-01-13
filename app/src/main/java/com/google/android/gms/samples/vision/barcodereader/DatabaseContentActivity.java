@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.app.Activity;
 import android.widget.Toast;
 
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,6 +22,7 @@ public class DatabaseContentActivity extends Activity {
     private final int pageSize = 1000;
 
     private static final int REQUEST_CODE_SAVE_FILE = 10086;
+    private static final int REQUEST_CODE_IMPORT_FILE = 10087;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +60,14 @@ public class DatabaseContentActivity extends Activity {
             @Override
             public void onClick(View v) {
                 showFilePicker();
+            }
+        });
+
+        Button btnImportCsv = findViewById(R.id.btnImportCsv);
+        btnImportCsv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showFilePickerForImport();
             }
         });
     }
@@ -101,6 +111,10 @@ public class DatabaseContentActivity extends Activity {
             Uri uri = data.getData();
             exportCsv(uri);
         }
+        if (requestCode == REQUEST_CODE_IMPORT_FILE && resultCode == RESULT_OK && data != null) {
+            Uri uri = data.getData();
+            importCsv(uri);
+        }
     }
 
     private void exportCsv(Uri uri) {
@@ -111,6 +125,32 @@ public class DatabaseContentActivity extends Activity {
             e.printStackTrace();
             Toast.makeText(this, "导出失败", Toast.LENGTH_SHORT).show();
         }
+    }
+
+    private void showFilePickerForImport() {
+        Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
+        intent.addCategory(Intent.CATEGORY_OPENABLE);
+        intent.setType("text/csv");
+        startActivityForResult(intent, REQUEST_CODE_IMPORT_FILE);
+    }
+
+    private void importCsv(Uri uri) {
+        try {
+            InputStream inputStream = getContentResolver().openInputStream(uri);
+            databaseHelper.insertOrUpdateFromCSV(inputStream);
+            Toast.makeText(this, "CSV Imported Successfully", Toast.LENGTH_LONG).show();
+            refreshDataDisplay();
+        } catch (Exception e) {
+            e.printStackTrace();
+            Toast.makeText(this, "Error importing CSV", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    private void refreshDataDisplay() {
+        pageNumber = 1; // Reset to first page
+        txtDataDisplay.setText(""); // Clear existing data
+
+        loadMoreData(); // Reload data
     }
 
 }
