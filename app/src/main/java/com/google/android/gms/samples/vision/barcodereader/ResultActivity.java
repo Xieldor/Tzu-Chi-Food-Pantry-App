@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.content.DialogInterface;
 import android.text.Html;
 import android.text.InputType;
 import android.text.TextUtils;
@@ -21,6 +20,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.sql.SQLException;
+import java.util.Objects;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
@@ -373,17 +373,33 @@ public class ResultActivity extends AppCompatActivity {
         alertDialog.show();
     }
 
+
     private void showUpdatePhoneNumberDialog(final Barcode.DriverLicense driverLicense) {
+        executor.execute(() -> {
+            DatabaseHelper.DriverLicenseDetails details;
+            try {
+                details = DatabaseHelper.getDriverLicenseDetails(driverLicense.licenseNumber);
+            } catch (SQLException | ClassNotFoundException e) {
+                runOnUiThread(this::showErrorDialog);
+                return;
+            }
+
+            DatabaseHelper.DriverLicenseDetails finalDetails = details;
+            runOnUiThread(() -> createUpdatePhoneNumberDialog(driverLicense, finalDetails));
+        });
+    }
+
+    private void createUpdatePhoneNumberDialog(final Barcode.DriverLicense driverLicense, DatabaseHelper.DriverLicenseDetails details) {
         // 创建包含多个输入字段的布局
         LinearLayout layout = new LinearLayout(this);
         layout.setOrientation(LinearLayout.VERTICAL);
         layout.setPadding(40, 20, 40, 20);
 
         // 添加带标签的输入框
-        EditText inputPhone = addLabeledEditText(layout, "手机号", InputType.TYPE_CLASS_PHONE,"");
-        EditText inputOver65 = addLabeledEditText(layout, "65岁以上人口数", InputType.TYPE_CLASS_NUMBER, "0");
-        EditText input17To64 = addLabeledEditText(layout, "17到64岁人口数", InputType.TYPE_CLASS_NUMBER, "0");
-        EditText inputUnder17 = addLabeledEditText(layout, "17岁以下人口数", InputType.TYPE_CLASS_NUMBER, "0");
+        EditText inputPhone = addLabeledEditText(layout, "手机号", InputType.TYPE_CLASS_PHONE, details.getPhoneNumber());
+        EditText inputOver65 = addLabeledEditText(layout, "65岁以上人口数", InputType.TYPE_CLASS_NUMBER, String.valueOf(details.getPopulationOver65()));
+        EditText input17To64 = addLabeledEditText(layout, "17到64岁人口数", InputType.TYPE_CLASS_NUMBER, String.valueOf(details.getPopulation17To64()));
+        EditText inputUnder17 = addLabeledEditText(layout, "17岁以下人口数", InputType.TYPE_CLASS_NUMBER, String.valueOf(details.getPopulationUnder17()));
 
         TextView veteranQuestion = new TextView(this);
         veteranQuestion.setText("家庭是否有退役军人");
@@ -399,7 +415,11 @@ public class ResultActivity extends AppCompatActivity {
         layout.addView(radioGroupVeteran);
 
         // 设置默认选中状态，或者基于之前保存的状态设置
-        radioButtonNo.setChecked(true); // 默认选择“否”
+        if (Objects.equals(details.isVeteran(), "1")) {
+            radioButtonYes.setChecked(true);
+        } else if (Objects.equals(details.isVeteran(), "0")) {
+            radioButtonNo.setChecked(true);
+        }
 
         // 创建对话框
         AlertDialog alertDialog = new AlertDialog.Builder(this)
@@ -424,7 +444,7 @@ public class ResultActivity extends AppCompatActivity {
                     });
                     showCompletionDialog();
                 })
-                .setNegativeButton("取消", (dialog, which) -> dialog.dismiss())
+                .setNegativeButton("取消", (dialog, which) -> showCompletionDialog())
                 .create();
 
         Window window = alertDialog.getWindow();

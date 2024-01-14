@@ -1,17 +1,9 @@
 package com.google.android.gms.samples.vision.barcodereader;
 
-import android.annotation.SuppressLint;
-import android.content.ContentValues;
-import android.content.Context;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
-
 import com.google.android.gms.vision.barcode.Barcode;
 import com.mysql.jdbc.Connection;
 
 import java.io.BufferedReader;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -52,7 +44,7 @@ public class DatabaseHelper {
 
 
     public static Connection getConnection(String dbName) throws SQLException, ClassNotFoundException {
-        Connection conn = null;
+        Connection conn;
         try {
             // 加载 JDBC 驱动
             Class.forName("com.mysql.jdbc.Driver");
@@ -78,7 +70,7 @@ public class DatabaseHelper {
     }
 
     public static boolean checkLicenseNumberExists(String licenseNumber) throws SQLException, ClassNotFoundException {
-        boolean exists = false;
+        boolean exists;
 
         // 使用 try-with-resources 语句自动关闭资源
         try (Connection conn = getConnection(TABLE_NAME);
@@ -292,9 +284,8 @@ public class DatabaseHelper {
     }
 
     public static void insertOrUpdateFromCSV(InputStream inputStream) throws IOException, ClassNotFoundException {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
 
-        try (Connection conn = getConnection(TABLE_NAME)) {
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream)); Connection conn = getConnection(TABLE_NAME)) {
             String line = reader.readLine(); // 读取并丢弃标题行
             if (line == null) return;
 
@@ -371,8 +362,6 @@ public class DatabaseHelper {
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
             throw e;
-        } finally {
-            reader.close();
         }
     }
 
@@ -432,6 +421,93 @@ public class DatabaseHelper {
             // 适当的错误处理
             throw ex;
         }
+    }
+
+    public static class DriverLicenseDetails {
+        private String phoneNumber;
+        private String populationOver65;
+        private String population17To64;
+        private String populationUnder17;
+        private String isVeteran;
+
+        // 默认构造函数
+        public DriverLicenseDetails() {
+            // 初始化所有属性
+            this.phoneNumber = "";
+            this.populationOver65 = "";
+            this.population17To64 = "";
+            this.populationUnder17 = "";
+            this.isVeteran = "";
+        }
+
+        // Getter 和 Setter 方法
+        public String getPhoneNumber() {
+            return phoneNumber;
+        }
+
+        public void setPhoneNumber(String phoneNumber) {
+            this.phoneNumber = phoneNumber;
+        }
+
+        public String getPopulationOver65() {
+            return populationOver65;
+        }
+
+        public void setPopulationOver65(String populationOver65) {
+            this.populationOver65 = populationOver65;
+        }
+
+        public String getPopulation17To64() {
+            return population17To64;
+        }
+
+        public void setPopulation17To64(String population17To64) {
+            this.population17To64 = population17To64;
+        }
+
+        public String getPopulationUnder17() {
+            return populationUnder17;
+        }
+
+        public void setPopulationUnder17(String populationUnder17) {
+            this.populationUnder17 = populationUnder17;
+        }
+
+        public String isVeteran() {
+            return isVeteran;
+        }
+
+        public void setVeteran(String isVeteran) {
+            this.isVeteran = isVeteran;
+        }
+
+    }
+
+    public static DriverLicenseDetails getDriverLicenseDetails(String licenseNumber) throws SQLException, ClassNotFoundException {
+        DriverLicenseDetails details = new DriverLicenseDetails();
+        String sql = "SELECT " +
+                "phone_number, population_over_65, population_17_to_64, population_under_17, veteran " +
+                "FROM " + TABLE_NAME + " WHERE " + KEY_LICENSE_NUMBER + " = ?";
+
+        try (Connection conn = getConnection(TABLE_NAME);
+             PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setString(1, licenseNumber);
+
+            try (ResultSet rs = pstmt.executeQuery()) {
+                if (rs.next()) {
+                    details.setPhoneNumber(rs.getString("phone_number"));
+                    details.setPopulationOver65(rs.getString("population_over_65"));
+                    details.setPopulation17To64(rs.getString("population_17_to_64"));
+                    details.setPopulationUnder17(rs.getString("population_under_17"));
+                    details.setVeteran(rs.getString("veteran"));
+                }
+            }
+        } catch (SQLException | ClassNotFoundException ex) {
+            ex.printStackTrace();
+            throw ex;
+        }
+
+        return details;
     }
 
 }

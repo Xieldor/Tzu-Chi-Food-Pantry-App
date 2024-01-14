@@ -1,18 +1,12 @@
 package com.google.android.gms.samples.vision.barcodereader;
 
-import android.app.AlertDialog;
-import android.content.DialogInterface;
+import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.text.Html;
-import android.view.Gravity;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
-import android.widget.TextView;
 import android.widget.Button;
-import android.app.Activity;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.InputStream;
